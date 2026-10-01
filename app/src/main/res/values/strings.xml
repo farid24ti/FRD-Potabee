@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MFA Oreo</string>
+    <string name="project_title">My Snack Project</string>
+    <string name="snack_name">Oreo Original</string>
+    <string name="nutrition_title">Komposisi Gizi</string>
+</resources>

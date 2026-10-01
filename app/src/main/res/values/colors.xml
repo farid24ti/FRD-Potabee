@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#0B0B0D</color>
+    <color name="dark_black">#111113</color>
+
+    <color name="potabee_red">#C62828</color>
+    <color name="potabee_red_dark">#8E1B1B</color>
+    <color name="potabee_red_soft">#E85D5D</color>
+
+    <color name="surface_dark">#1A1A1D</color>
+    <color name="surface_card">#222225</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#F5F5F5</color>
+    <color name="text_secondary">#B8B8BC</color>
+
+    <color name="divider">#35353A</color>
+
+</resources>
