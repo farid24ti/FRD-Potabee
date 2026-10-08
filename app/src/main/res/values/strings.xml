@@ -3,4 +3,9 @@
     <string name="project_title">My Snack Project</string>
     <string name="snack_name">Oreo Original</string>
     <string name="nutrition_title">Komposisi Gizi</string>
+
+    <string name="siksp_app_name">SI-KSP Mobile</string>
+    <string name="siksp_tagline">Sistem Informasi Koperasi Simpan Pinjam</string>
+    <string name="siksp_welcome">Kelola Keuangan Lebih Mudah</string>
+    <string name="siksp_description">Solusi digital untuk mengelola simpanan, pinjaman, dan keuangan koperasi.</string>
 </resources>

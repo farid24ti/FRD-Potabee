@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/transparent"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="SI-KSP"
+        app:titleTextColor="@color/siksp_text_dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/siksp_wave_header"
+                    android:contentDescription="@null" />
+
+                <!-- LOGO -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:src="@drawable/logo_siksp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/siksp_app_name"
+                    app:shapeAppearanceOverlay="@style/SIKSPLogoShape" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:paddingBottom="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Mudah, Aman,\nTerpercaya"
+                    android:textColor="@color/siksp_text_dark"
+                    android:textSize="27sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"
+                    android:text="Kelola kebutuhan koperasi dalam satu aplikasi."
+                    android:textColor="@color/siksp_text_secondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/lexend" />
+
+                <Button
+                    android:id="@+id/btnLanjut"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/siksp_button_primary"
+                    android:backgroundTint="@null"
+                    android:text="NEXT"
+                    android:textAllCaps="false"
+                    android:textColor="@color/siksp_white"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/lexend" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

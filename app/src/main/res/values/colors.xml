@@ -17,4 +17,11 @@
 
     <color name="divider">#35353A</color>
 
+    <color name="siksp_primary">#0D6EFD</color>
+    <color name="siksp_primary_dark">#0754C7</color>
+    <color name="siksp_background">#F5F9FF</color>
+    <color name="siksp_white">#FFFFFF</color>
+    <color name="siksp_text_dark">#172B4D</color>
+    <color name="siksp_text_secondary">#6B7A90</color>
+    <color name="siksp_light_blue">#E8F2FF</color>
 </resources>

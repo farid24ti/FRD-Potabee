@@ -5,5 +5,21 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <!-- Theme khusus SI-KSP -->
     <style name="Theme.FRDPotabee" parent="Base.Theme.FRDPotabee" />
+
+    <style name="Theme.SIKSP" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/siksp_primary</item>
+        <item name="colorPrimaryContainer">@color/siksp_light_blue</item>
+
+        <item name="colorSecondary">@color/siksp_primary</item>
+        <item name="colorSecondaryContainer">@color/siksp_light_blue</item>
+
+        <item name="colorSurface">@color/siksp_white</item>
+        <item name="colorOnSurface">@color/siksp_text_dark</item>
+
+        <item name="android:fontFamily">@font/lexend</item>
+
+    </style>
 </resources>

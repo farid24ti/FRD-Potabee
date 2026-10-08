@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <!-- HEADER BIRU -->
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/siksp_wave_header"
+                android:contentDescription="@null" />
+
+            <!-- NAMA APLIKASI + TAGLINE -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="28dp"
+                android:paddingEnd="28dp"
+                android:paddingTop="35dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SI-KSP Mobile"
+                    android:textColor="@color/siksp_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Sistem Informasi Koperasi Simpan Pinjam"
+                    android:textColor="@color/siksp_white"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/lexend" />
+
+            </LinearLayout>
+
+            <!-- LOGO DI TENGAH BATAS BIRU DAN PUTIH -->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="105dp"
+                android:layout_height="105dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="150dp"
+                android:padding="8dp"
+                android:src="@drawable/logo_siksp"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/siksp_app_name"
+                app:shapeAppearanceOverlay="@style/SIKSPLogoShape" />
+
+            <!-- LEWATI -->
+            <TextView
+                android:id="@+id/txtSkip"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="top|end"
+                android:gravity="center"
+                android:paddingStart="12dp"
+                android:paddingEnd="20dp"
+                android:text="Lewati"
+                android:textColor="@color/siksp_white"
+                android:textSize="14sp"
+                android:fontFamily="@font/lexend" />
+
+        </FrameLayout>
+
+        <!-- BAGIAN PUTIH -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingBottom="35dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Kelola Keuangan Lebih Mudah"
+                android:textColor="@color/siksp_text_dark"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lexend" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Solusi digital untuk mengelola simpanan, pinjaman, dan keuangan koperasi."
+                android:textColor="@color/siksp_text_secondary"
+                android:textSize="14sp"
+                android:lineSpacingExtra="4dp"
+                android:fontFamily="@font/lexend" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/siksp_button_primary"
+                android:backgroundTint="@null"
+                android:text="NEXT"
+                android:textAllCaps="false"
+                android:textColor="@color/siksp_white"
+                android:textSize="15sp"
+                android:fontFamily="@font/lexend" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

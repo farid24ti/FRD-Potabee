@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="375dp"
+    android:height="230dp"
+    android:viewportWidth="375"
+    android:viewportHeight="230">
+
+    <!-- Biru utama -->
+    <path
+        android:fillColor="@color/siksp_primary"
+        android:pathData="M0,0
+            L375,0
+            L375,190
+            C335,218 295,220 250,202
+            C185,178 110,184 0,225
+            Z" />
+
+    <!-- Gelombang biru muda -->
+    <path
+        android:fillColor="#39A0FF"
+        android:fillAlpha="0.35"
+        android:pathData="M0,0
+            L375,0
+            L375,120
+            C325,145 285,150 240,135
+            C170,112 95,125 0,170
+            Z" />
+
+</vector>
