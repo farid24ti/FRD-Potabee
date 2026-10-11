@@ -14,11 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FRDPotabee">
 
-        <!-- MAIN ACTIVITY SI-KSP -->
+        <!-- SPLASH SCREEN (LAUNCHER) -->
         <activity
-            android:name=".siksp.MainActivity"
+            android:name=".siksp.SplashScreenActivity"
             android:exported="true"
-            android:windowSoftInputMode="adjustResize"
             android:theme="@style/Theme.SIKSP">
 
             <intent-filter>
@@ -27,6 +26,19 @@
             </intent-filter>
 
         </activity>
+
+        <!-- HALAMAN UTAMA SETELAH LOGIN -->
+        <activity
+            android:name=".siksp.HomeActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.SIKSP" />
+
+        <!-- PROFIL DEVELOPER -->
+        <activity
+            android:name=".siksp.ProfilDeveloperActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SIKSP" />
 
         <!-- MAIN ACTIVITY SNACK LAMA -->
         <activity
@@ -41,6 +53,12 @@
             android:windowSoftInputMode="adjustResize" />
 
         <!-- SI-KSP -->
+        <activity
+            android:name=".siksp.MainActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"
+            android:theme="@style/Theme.SIKSP" />
+
         <activity
             android:name=".siksp.Splash2Activity"
             android:exported="false"

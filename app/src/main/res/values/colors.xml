@@ -24,4 +24,6 @@
     <color name="siksp_text_dark">#172B4D</color>
     <color name="siksp_text_secondary">#6B7A90</color>
     <color name="siksp_light_blue">#E8F2FF</color>
+
+    <color name="siksp_danger">#DC3545</color>
 </resources>

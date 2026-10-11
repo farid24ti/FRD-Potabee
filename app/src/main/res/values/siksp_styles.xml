@@ -12,4 +12,25 @@
 
     </style>
 
+    <style name="SIKSPCardTitle">
+        <item name="android:textColor">@color/siksp_primary</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="SIKSPLabel">
+        <item name="android:textColor">@color/siksp_text_secondary</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/lexend</item>
+    </style>
+
+    <style name="SIKSPValue">
+        <item name="android:textColor">@color/siksp_text_dark</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/lexend</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
 </resources>

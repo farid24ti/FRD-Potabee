@@ -69,6 +69,15 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
+            // ===== SIMPAN AKUN TERDAFTAR (SharedPreferences) =====
+            val akunPref = getSharedPreferences("akun_pref", MODE_PRIVATE)
+            val editor = akunPref.edit()
+            editor.putString("nama", nama)
+            editor.putString("username", username)
+            editor.putString("noHp", noHp)
+            editor.putString("password", password)
+            editor.apply()
+
             Toast.makeText(
                 this,
                 "Pendaftaran berhasil",
