@@ -12,7 +12,6 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@android:color/white"
-        app:navigationIcon="@drawable/ic_arrow_back"
         app:title="Profil Developer"
         app:titleTextColor="@color/siksp_text_dark" />
 

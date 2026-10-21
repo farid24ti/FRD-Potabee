@@ -19,25 +19,18 @@
             android:name=".siksp.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/Theme.SIKSP">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
 
-        <!-- HALAMAN UTAMA SETELAH LOGIN -->
+        <!-- HALAMAN UTAMA SETELAH LOGIN (HOST BOTTOM NAVIGATION) -->
         <activity
-            android:name=".siksp.HomeActivity"
+            android:name=".siksp.BaseActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.SIKSP" />
-
-        <!-- PROFIL DEVELOPER -->
-        <activity
-            android:name=".siksp.ProfilDeveloperActivity"
-            android:exported="false"
             android:theme="@style/Theme.SIKSP" />
 
         <!-- MAIN ACTIVITY SNACK LAMA -->
@@ -56,33 +49,28 @@
         <activity
             android:name=".siksp.MainActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.SIKSP" />
-
+            android:theme="@style/Theme.SIKSP"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".siksp.Splash2Activity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.SIKSP"/>
-
+            android:theme="@style/Theme.SIKSP"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".siksp.LoginActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.SIKSP"/>
-
+            android:theme="@style/Theme.SIKSP"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".siksp.RegisterActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.SIKSP"/>
-
+            android:theme="@style/Theme.SIKSP"
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".siksp.WebActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.SIKSP"/>
-
+            android:theme="@style/Theme.SIKSP"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

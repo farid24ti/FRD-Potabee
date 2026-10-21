@@ -76,7 +76,7 @@ class LoginActivity : AppCompatActivity() {
                 editor.putString("nama", akunPref.getString("nama", username))
                 editor.apply()
 
-                startActivity(Intent(this, HomeActivity::class.java))
+                startActivity(Intent(this, BaseActivity::class.java))
                 finish()
 
             } else {
