@@ -53,37 +53,32 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            // ===== AUTENTIKASI: cocokkan dengan akun yang didaftarkan =====
+            // ===== AUTENTIKASI =====
             val akunPref = getSharedPreferences("akun_pref", MODE_PRIVATE)
             val savedUsername = akunPref.getString("username", null)
             val savedPassword = akunPref.getString("password", null)
 
-            if (savedUsername == null || savedPassword == null) {
-                tampilkanDialog(
-                    "Login Gagal",
-                    "Akun belum terdaftar. Silakan daftar terlebih dahulu."
-                )
-                return@setOnClickListener
-            }
+            // Kondisi 1: username == password | Kondisi 2: cocok dengan SharedPreferences
+            val loginValid = (username == password) ||
+                    (username == savedUsername && password == savedPassword)
 
-            if (username == savedUsername && password == savedPassword) {
-
-                // ===== AUTENTIKASI BERHASIL: simpan sesi login =====
+            if (loginValid) {
                 val sharedPref = getSharedPreferences("user_pref", MODE_PRIVATE)
                 val editor = sharedPref.edit()
                 editor.putBoolean("isLogin", true)
                 editor.putString("username", username)
-                editor.putString("nama", akunPref.getString("nama", username))
+                editor.putString(
+                    "nama",
+                    if (username == savedUsername) akunPref.getString("nama", username) else username
+                )
                 editor.apply()
 
+                // Login berhasil -> Home
                 startActivity(Intent(this, BaseActivity::class.java))
                 finish()
-
             } else {
-                tampilkanDialog(
-                    "Login Gagal",
-                    "Username atau password salah."
-                )
+                // Login gagal -> MaterialAlertDialog
+                tampilkanDialog("Login Gagal", "Username atau password salah.")
             }
         }
 
@@ -93,11 +88,11 @@ class LoginActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        // Daftar akun
-        binding.txtRegister.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
-            startActivity(intent)
+        // Register With Gmail
+        binding.btnRegisterGmail.setOnClickListener {
+            startActivity(Intent(this, EmailActivity::class.java))
         }
+
     }
 
     private fun tampilkanDialog(judul: String, pesan: String) {

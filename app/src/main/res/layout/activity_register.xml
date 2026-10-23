@@ -130,6 +130,23 @@
                     android:paddingEnd="16dp"
                     android:fontFamily="@font/lexend" />
 
+                <!-- EMAIL (otomatis dari Login Gmail, tidak bisa diubah) -->
+                <EditText
+                    android:id="@+id/inputEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/siksp_input"
+                    android:hint="Email"
+                    android:enabled="false"
+                    android:textColor="@color/siksp_text_dark"
+                    android:textColorHint="@color/siksp_text_secondary"
+                    android:textSize="13sp"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:fontFamily="@font/lexend" />
+
                 <!-- USERNAME -->
                 <EditText
                     android:id="@+id/inputUsername"
@@ -146,21 +163,6 @@
                     android:paddingEnd="16dp"
                     android:fontFamily="@font/lexend" />
 
-                <!-- NOMOR HP -->
-                <EditText
-                    android:id="@+id/inputNoHp"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/siksp_input"
-                    android:hint="Nomor HP"
-                    android:textColor="@color/siksp_text_dark"
-                    android:textColorHint="@color/siksp_text_secondary"
-                    android:textSize="13sp"
-                    android:inputType="phone"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"
-                    android:fontFamily="@font/lexend" />
 
                 <!-- PASSWORD -->
                 <EditText
@@ -178,21 +180,6 @@
                     android:paddingEnd="16dp"
                     android:fontFamily="@font/lexend" />
 
-                <!-- KONFIRMASI PASSWORD -->
-                <EditText
-                    android:id="@+id/inputKonfirmasiPassword"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/siksp_input"
-                    android:hint="Konfirmasi Password"
-                    android:textColor="@color/siksp_text_dark"
-                    android:textColorHint="@color/siksp_text_secondary"
-                    android:textSize="13sp"
-                    android:inputType="textPassword"
-                    android:paddingStart="16dp"
-                    android:paddingEnd="16dp"
-                    android:fontFamily="@font/lexend" />
 
                 <!-- DAFTAR -->
                 <Button

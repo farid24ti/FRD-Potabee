@@ -30,8 +30,8 @@
         <activity
             android:name=".siksp.BaseActivity"
             android:exported="false"
-            android:windowSoftInputMode="adjustResize"
-            android:theme="@style/Theme.SIKSP" />
+            android:theme="@style/Theme.SIKSP"
+            android:windowSoftInputMode="adjustResize" />
 
         <!-- MAIN ACTIVITY SNACK LAMA -->
         <activity
@@ -70,6 +70,14 @@
             android:name=".siksp.WebActivity"
             android:exported="false"
             android:theme="@style/Theme.SIKSP"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".siksp.EmailActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".siksp.RegistrasiBerhasilActivity"
+            android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>
 

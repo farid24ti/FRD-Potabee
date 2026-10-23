@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registrasi Berhasil"
+        android:textColor="@color/siksp_text_dark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lexend" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Akun Anda berhasil dibuat. Silakan login."
+        android:textColor="@color/siksp_text_secondary"
+        android:textSize="13sp"
+        android:fontFamily="@font/lexend" />
+
+    <Button
+        android:id="@+id/btnKeLogin"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/siksp_button_primary"
+        android:backgroundTint="@null"
+        android:text="Ke Halaman Login"
+        android:textAllCaps="false"
+        android:textColor="@color/siksp_white"
+        android:textSize="15sp"
+        android:fontFamily="@font/lexend" />
+
+</LinearLayout>

@@ -2,7 +2,6 @@ package com.example.frd_potabee.siksp
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.frd_potabee.databinding.ActivityRegisterBinding
 
@@ -21,15 +20,16 @@ class RegisterActivity : AppCompatActivity() {
             finish()
         }
 
+        val email = intent.getStringExtra("email") ?: ""
+        binding.inputEmail.setText(email)
+
         // Tombol Daftar
         binding.btnDaftar.setOnClickListener {
 
             val nama = binding.inputNama.text.toString().trim()
-            val username = binding.inputUsername.text.toString().trim()
-            val noHp = binding.inputNoHp.text.toString().trim()
+            val username = binding.inputUsername.text.toString()
             val password = binding.inputPassword.text.toString()
-            val konfirmasiPassword =
-                binding.inputKonfirmasiPassword.text.toString()
+
 
             if (nama.isEmpty()) {
                 binding.inputNama.error = "Nama lengkap harus diisi"
@@ -43,51 +43,36 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if (noHp.isEmpty()) {
-                binding.inputNoHp.error = "Nomor HP harus diisi"
-                binding.inputNoHp.requestFocus()
-                return@setOnClickListener
-            }
-
             if (password.isEmpty()) {
                 binding.inputPassword.error = "Password harus diisi"
                 binding.inputPassword.requestFocus()
                 return@setOnClickListener
             }
 
-            if (konfirmasiPassword.isEmpty()) {
-                binding.inputKonfirmasiPassword.error =
-                    "Konfirmasi password harus diisi"
-                binding.inputKonfirmasiPassword.requestFocus()
+            if (password.length < 6) {
+                binding.inputPassword.error = "Password minimal 6 karakter"
+                binding.inputPassword.requestFocus()
                 return@setOnClickListener
             }
 
-            if (password != konfirmasiPassword) {
-                binding.inputKonfirmasiPassword.error =
-                    "Password tidak sama"
-                binding.inputKonfirmasiPassword.requestFocus()
+            if (username.contains(" ")) {
+                binding.inputUsername.error = "Username tidak boleh mengandung spasi"
+                binding.inputUsername.requestFocus()
                 return@setOnClickListener
             }
 
-            // ===== SIMPAN AKUN TERDAFTAR (SharedPreferences) =====
+
+
+            // ===== SIMPAN DATA REGISTRASI (SharedPreferences) =====
             val akunPref = getSharedPreferences("akun_pref", MODE_PRIVATE)
             val editor = akunPref.edit()
             editor.putString("nama", nama)
+            editor.putString("email", email)
             editor.putString("username", username)
-            editor.putString("noHp", noHp)
             editor.putString("password", password)
             editor.apply()
 
-            Toast.makeText(
-                this,
-                "Pendaftaran berhasil",
-                Toast.LENGTH_SHORT
-            ).show()
-
-            startActivity(
-                Intent(this, LoginActivity::class.java)
-            )
-
+            startActivity(Intent(this, RegistrasiBerhasilActivity::class.java))
             finish()
         }
 

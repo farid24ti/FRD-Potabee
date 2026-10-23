@@ -174,20 +174,19 @@
                     android:textSize="14sp"
                     android:fontFamily="@font/lexend" />
 
-                <!-- REGISTER -->
-                <TextView
-                    android:id="@+id/txtRegister"
+                <!-- REGISTER WITH GMAIL -->
+                <Button
+                    android:id="@+id/btnRegisterGmail"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:gravity="center"
-                    android:text="Belum punya akun?  Daftar sekarang"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/siksp_button_outline"
+                    android:backgroundTint="@null"
+                    android:text="@string/register_with_gmail"
+                    android:textAllCaps="false"
                     android:textColor="@color/siksp_primary"
-                    android:textSize="13sp"
-                    android:fontFamily="@font/lexend"
-                    android:clickable="true"
-                    android:focusable="true" />
-
+                    android:textSize="14sp"
+                    android:fontFamily="@font/lexend" />
             </LinearLayout>
 
         </LinearLayout>

@@ -26,4 +26,5 @@
     <string name="dev_strength">Cepat belajar hal baru dan tekun menyelesaikan masalah sampai tuntas.</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="register_with_gmail">Register With Gmail</string>
 </resources>
