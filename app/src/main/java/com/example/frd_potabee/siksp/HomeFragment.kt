@@ -43,6 +43,11 @@ class HomeFragment : Fragment() {
             (requireActivity() as BaseActivity).pilihMenu(R.id.nav_info)
         }
 
+        // Kartu Anggota (QR Code)
+        binding.btnKartu.setOnClickListener {
+            startActivity(Intent(requireContext(), KartuAnggotaActivity::class.java))
+        }
+
         // Logout: hapus sesi login lalu kembali ke halaman Login
         binding.btnLogout.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext())

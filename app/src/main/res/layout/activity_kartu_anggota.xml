@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/siksp_background"
+    tools:context=".siksp.KartuAnggotaActivity">
+
+    <!-- TOOLBAR -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:navigationIcon="@drawable/ic_arrow_back"
+        app:title="Kartu Anggota"
+        app:titleTextColor="@color/siksp_text_dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- KARTU ANGGOTA -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/siksp_card"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <!-- LOGO -->
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:padding="6dp"
+                    android:src="@drawable/logo_siksp"
+                    android:scaleType="centerInside"
+                    android:contentDescription="@string/siksp_app_name"
+                    app:shapeAppearanceOverlay="@style/SIKSPLogoShape" />
+
+                <!-- JUDUL -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="KARTU ANGGOTA"
+                    android:textColor="@color/siksp_primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/lexend" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/siksp_app_name"
+                    android:textColor="@color/siksp_text_secondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/lexend" />
+
+                <!-- QR CODE -->
+                <ImageView
+                    android:id="@+id/imgQr"
+                    android:layout_width="240dp"
+                    android:layout_height="240dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@android:color/white"
+                    android:padding="8dp"
+                    android:scaleType="fitCenter"
+                    android:contentDescription="QR Code Kartu Anggota" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Tunjukkan QR code ini kepada petugas koperasi"
+                    android:textColor="@color/siksp_text_secondary"
+                    android:textSize="11sp"
+                    android:fontFamily="@font/lexend" />
+
+                <!-- GARIS PEMISAH -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="#D9E6F7" />
+
+                <!-- DATA ANGGOTA -->
+                <TextView
+                    style="@style/SIKSPLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nama" />
+                <TextView
+                    android:id="@+id/txtNama"
+                    style="@style/SIKSPValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <TextView
+                    style="@style/SIKSPLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Username" />
+                <TextView
+                    android:id="@+id/txtUsername"
+                    style="@style/SIKSPValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="-" />
+
+                <TextView
+                    style="@style/SIKSPLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email" />
+                <TextView
+                    android:id="@+id/txtEmail"
+                    style="@style/SIKSPValue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="0dp"
+                    android:text="-" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

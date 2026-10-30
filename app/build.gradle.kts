@@ -42,6 +42,11 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
+
+    // ===== FITUR BARU =====
+    implementation("androidx.biometric:biometric:1.1.0")   // Login sidik jari
+    implementation("com.google.zxing:core:3.5.4")          // QR code kartu anggota
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.androidx.junit)

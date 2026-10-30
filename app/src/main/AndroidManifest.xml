@@ -79,6 +79,10 @@
             android:name=".siksp.RegistrasiBerhasilActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".siksp.KartuAnggotaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SIKSP" />
     </application>
 
 </manifest>
